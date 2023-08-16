@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+
+
+.menu {
+    margin: 20px;
+    font-family: 'Manrope', sans-serif;
+}
+.menu a{
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Manrope', sans-serif;
+}
+
+.main {
+    background-color: #1f2039;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    margin-top: 30px;
+    width: 100%;
+    
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #a5b4fc;;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: larger;
+    color: white;
+    margin-top: 20px;
+    
+}
+
+.texte {
+    margin-top: 60px;   
+    margin-right: 20px;
+   align-items: center;
+}
+
+em {
+    font-family: normal;
+    color: #a5b4fc;
+}
+
+.photo {
+   margin-top: 40px;
+   margin-bottom: 40px;
+}
+
+
+button {
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: 30px;
+    border-radius: 30px;
+    background: linear-gradient(#8e86b5, #acaeed);
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+button:hover {
+        background: linear-gradient(#b5addb, #babbe0);
+}
+
+
+.projet {
+    margin-top: 80px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 80px;
+    font-family: 'Montserrat', sans-serif;
+    color: #242424
+}
+
+
+.first-items img {
+    margin: 4px;
+}
+
+.second-items img {
+    margin: 4px;
+}
+
+
+.formulaire {
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #1f2039;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+
+.formulaire h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #a5b4fc;;
+}
+
+
+.formulaire label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+
+.formulaire input[type="text"],
+.formulaire input[type="email"],
+.formulaire textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 3px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.formulaire input[type="text"][name="nom"],
+.formulaire input[type="email"][name="email"] {
+    width: calc(50% - 5px);
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.formulaire textarea {
+    width: 50%;
+    height: 150px;
+}
+
+.formulaire button[type="submit"] {
+    background: linear-gradient(#8e86b5, #acaeed);
+    color: #fff;
+    padding: 13px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.formulaire button:hover {
+    background: linear-gradient(#b5addb, #babbe0);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ,a {
+    margin: 10px;
+    margin-top: 10px;
+}
+
+footer, .logo {
+    margin-top: 10px;
+}
+
+
+@media (max-width : 900px) {
+    .first-items {
+        flex-wrap: wrap;
+    }
+    .texte {
+        margin-left: 30px;
+    }
+    .texte button {
+       margin-left: 100px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+}
