@@ -66,6 +66,10 @@ em {
    margin-bottom: 40px;
 }
 
+.photo img {
+    width: 70%;
+}
+
 
 button {
     padding: 20px;
@@ -186,6 +190,9 @@ footer, .logo {
 
 
 @media (max-width : 900px) {
+    .photo img {
+        width: 100%;
+    }
     .first-items {
         flex-wrap: wrap;
     }
@@ -193,7 +200,7 @@ footer, .logo {
         margin-left: 30px;
     }
     .texte button {
-       margin-left: 100px;
+       margin-left: 60px;
     }
     .navbar {
         flex-direction: column;
