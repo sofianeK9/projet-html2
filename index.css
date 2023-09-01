@@ -2,6 +2,7 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -18,7 +19,8 @@
     margin: 20px;
     font-family: 'Manrope', sans-serif;
 }
-.menu a{
+
+.menu a {
     margin: 20px;
     text-decoration: none;
     color: black;
@@ -33,13 +35,14 @@
     color: white;
     margin-top: 30px;
     width: 100%;
-    
+
 }
 
 h1 {
     font-size: 3.5rem;
     font-family: 'Montserrat', sans-serif;
-    color: #a5b4fc;;
+    color: #a5b4fc;
+    ;
 }
 
 p {
@@ -47,13 +50,13 @@ p {
     font-size: larger;
     color: white;
     margin-top: 20px;
-    
+
 }
 
 .texte {
-    margin-top: 60px;   
+    margin-top: 60px;
     margin-right: 20px;
-   align-items: center;
+    align-items: center;
 }
 
 em {
@@ -62,8 +65,8 @@ em {
 }
 
 .photo {
-   margin-top: 40px;
-   margin-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .photo img {
@@ -83,7 +86,7 @@ button {
 }
 
 button:hover {
-        background: linear-gradient(#b5addb, #babbe0);
+    background: linear-gradient(#b5addb, #babbe0);
 }
 
 
@@ -125,7 +128,8 @@ h2 {
 .formulaire h2 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #a5b4fc;;
+    color: #a5b4fc;
+    ;
 }
 
 
@@ -140,7 +144,7 @@ h2 {
 .formulaire input[type="text"],
 .formulaire input[type="email"],
 .formulaire textarea {
-    width: 100%;
+    width: 50%;
     padding: 10px;
     margin-bottom: 15px;
     border: none;
@@ -151,13 +155,13 @@ h2 {
 
 .formulaire input[type="text"][name="nom"],
 .formulaire input[type="email"][name="email"] {
-    width: calc(50% - 5px);
+    width: calc(20% - 5px);
     margin-right: 10px;
     display: inline-block;
 }
 
 .formulaire textarea {
-    width: 50%;
+    width: 20%;
     height: 150px;
 }
 
@@ -170,6 +174,7 @@ h2 {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 .formulaire button:hover {
     background: linear-gradient(#b5addb, #babbe0);
 }
@@ -179,31 +184,57 @@ footer {
     justify-content: space-between;
 }
 
-footer ,a {
+footer,
+a {
     margin: 10px;
     margin-top: 10px;
 }
 
-footer, .logo {
+footer,
+.logo {
     margin-top: 10px;
 }
 
 
 @media (max-width : 900px) {
+
     .photo img {
         width: 100%;
     }
+
     .first-items {
         flex-wrap: wrap;
     }
+
     .texte {
         margin-left: 30px;
     }
+
     .texte button {
-       margin-left: 60px;
+        margin-left: 60px;
     }
+
     .navbar {
         flex-direction: column;
         align-items: center;
+    }
+
+    .formulaire input[type="text"][name="nom"],
+    .formulaire input[type="email"][name="email"] {
+        width: calc(50% - 5px);
+        margin-right: 10px;
+        display: inline-block;
+    }
+
+    .formulaire input[type="text"],
+    .formulaire input[type="email"],
+    .formulaire textarea {
+        width: 50%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 3px;
+        background-color: #fff;
+        box-sizing: border-box;
     }
 }
