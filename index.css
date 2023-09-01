@@ -196,7 +196,46 @@ footer,
 }
 
 
-@media (max-width : 900px) {
+@media (min-width : 700px) and (max-width : 899px) {
+    .photo img {
+        width: 100%;
+    }
+
+    .first-items {
+        flex-wrap: wrap;
+    }
+
+    .texte {
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulaire input[type="text"][name="nom"],
+    .formulaire input[type="email"][name="email"] {
+        width: calc(50% - 5px);
+        margin-right: 10px;
+        display: inline-block;
+    }
+
+    .formulaire input[type="text"],
+    .formulaire input[type="email"],
+    .formulaire textarea {
+        width: 50%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 3px;
+        background-color: #fff;
+        box-sizing: border-box;
+    }
+
+}
+
+@media (max-width : 600px) {
 
     .photo img {
         width: 100%;
@@ -207,11 +246,7 @@ footer,
     }
 
     .texte {
-        margin-left: 30px;
-    }
-
-    .texte button {
-        margin-left: 60px;
+        text-align: center;
     }
 
     .navbar {
